@@ -1,72 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+import Carrousel from './Carrousel'
 
-import AppBar from '@material-ui/core/AppBar'
-import ToolBar from '@material-ui/core/Toolbar'
-import MenuIcon from '@material-ui/icons/Menu'
-import IconButton from '@material-ui/core/Icon'
+const Header = () => {
+    return (
 
-import SideDrawer from './sideDrawer'
-
-
-class Header extends Component {
-
-    state={
-        drawerOpen: false
-    }
-
-    toggleDrawer = (value)=>{
-        this.setState({
-            drawerOpen: value
-        })
-    }
-
-    render() {
-        return (
-            <div className="header">
-                <AppBar
-                    position="fixed"
-                    style={{
-                        backgroundColor:"#2f2f2f",
-                        boxShadow:'none',
-                        padding: '10px 0px'
-                    }}
-                >
-                   <ToolBar>
-
-                       <div className="header__logo">
-                            <div className='heading-1'
-                                style={{
-                                    textTransform:"uppercase"
-                                }}
-                            >Youmii</div>
-                            <div className='heading-3'>Design Studios</div>
-                       </div>
-
-                       <IconButton
-                        aria-label="menu"
-                        color="inherit"
-                        onClick={()=> this.toggleDrawer(true) }
-                        display="block"
-                        
-                       >
-                           <MenuIcon/>
-                       </IconButton>
-
-                       <SideDrawer
-                        open={this.state.drawerOpen}
-                        onClose={(value)=> this.toggleDrawer(value)}
-                       >
-
-
-                       </SideDrawer>
-                     
-                   </ToolBar>
-                   
-                </AppBar>
-            </div>
-        );
-    }
-}
+      <div className="header">
+         <Carrousel/>
+       </div>
+    );
+};
 
 export default Header;

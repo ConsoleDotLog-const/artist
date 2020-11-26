@@ -1,0 +1,19 @@
+.carrousel{
+
+    
+    &__img{
+
+
+        &--1{
+
+        grid-row: 2 / -1;
+        grid-column: 1 / 5;
+
+        background-image: url(https://images.unsplash.com/photo-1606298026563-3ced74f61b8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+        background-size: cover;
+        background-position: center;
+        height:100%;
+
+        }
+    }
+}
