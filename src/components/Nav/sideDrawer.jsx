@@ -12,8 +12,8 @@ const SideDrawer = (props) => {
             onClose={()=> props.onClose(false) }
         >
             <List component="nav">
-                <ListItem button onClick={()=>console.log("Heading")} className="heading-3">
-                   Heading
+                <ListItem button onClick={()=>console.log("Header")} className="heading-3">
+                   Header
                 </ListItem>
                 <ListItem button onClick={()=>console.log("Featured")} className="heading-3">
                     Featured
