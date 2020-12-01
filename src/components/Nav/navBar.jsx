@@ -64,7 +64,11 @@ class Header extends Component {
                         aria-label="menu"
                         color="inherit"
                         onClick={()=> this.toggleDrawer(true) }
+<<<<<<< HEAD
                         
+=======
+                        display="block"
+>>>>>>> 1d19484190c31c1c28272033b97b08bfb8a811fa
                         
                        >
                            <MenuIcon/>
